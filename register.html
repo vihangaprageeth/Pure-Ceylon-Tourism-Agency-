@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Register section start -->
+<section class="register" id="register">
+    <h1 class="heading">
+        <span>R</span>
+        <span>e</span>
+        <span>g</span>
+        <span>i</span>
+        <span>s</span>
+        <span>t</span>
+        <span>e</span>
+        <span>r</span>
+    </h1>
+    <div class="row">
+        <div class="image">
+            <img src="image/reg1.jpg" alt="Registration Image">
+        </div>
+        <form action="backend.php" method="post">
+            <h3>Register Now</h3>
+            <h4>Get the best travel deals and offers.</h4>
+            
+            <input type="text" name="name" class="box" placeholder="Enter Your Name" required>
+            <input type="email" name="email" class="box" placeholder="Enter Your Email" required>
+            <input type="password" name="password" class="box" placeholder="Enter Your Password" required>
+            <input type="number" name="mobile_number" class="box" placeholder="Enter Your Mobile Number" required>
+            <input type="text" name="package_name" class="box" placeholder="Enter Package Name" required>
+        
+            <label for="package-type">Select Package Type:</label>
+            <select id="package-type" name="package_type" class="box" required>
+                <option value="" disabled selected>Select a package</option>
+                <option value="adventure">Adventure</option>
+                <option value="cultural">Cultural</option>
+                <option value="beach">Beach</option>
+                <option value="eco">Eco-Tourism</option>
+            </select>
+        
+            <label for="travel-dates">Preferred Travel Dates:</label>
+            <input type="date" id="travel_date" name="travel_date" class="box" required>
+        
+            <label for="number-of-travelers">Number of Travelers:</label>
+            <input type="number" id="number-of-travelers" name="number_of_travelers" class="box" placeholder="Enter Number of Travelers" required>
+        
+            <label for="preferences">Travel Preferences:</label>
+            <textarea id="preferences" name="preferences" rows="4" class="box" placeholder="Any specific preferences (e.g., vegetarian meals, accessibility needs)"></textarea>
+            <br>
+        
+            <label for="newsletter">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                I want to receive updates and special offers via email.
+            </label>
+            <br>
+        
+            <label for="message">Message or Special Requests:</label>
+            <textarea id="message" name="message" rows="5" class="box" placeholder="Enter any special requests or questions here"></textarea>
+            <br>
+        
+            <input type="checkbox" id="terms" name="terms_accept" required>
+            <label for="terms">I agree to the terms & conditions</label>
+            <br>
+        
+            <div class="captcha">
+                <label for="captcha">Please solve: 3 + 2 = ?</label>
+                <input type="text" id="captcha" name="captcha" class="box" placeholder="Your Answer" required>
+            </div>
+            
+            <input type="submit" value="Register" class="btn">
+        </form>
+        
+     
+    </div>
+    <br>
+   
+</section>
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <img src="image/pure ceylon.png" alt="logo">
+            <h3>About Us</h3>
+            <p>
+                Our company is a leading travel agency in Sri Lanka. We provide the best travel packages for our customers.
+                We have a team of professionals who are ready to help you at any time. We provide the best services for our 
+                customers. We have a wide range of travel packages for you to choose from.
+            </p>
+        </div>
+
+        <div class="box">
+            <h3>Branch Locations</h3>
+            <a href="#">Colombo</a>
+            <a href="#">Kandy</a>
+            <a href="#">Galle</a>
+            <a href="#">Jaffna</a>
+            <a href="#">Rathnapura</a>
+        </div>
+
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="#home">Home</a>
+            <a href="about.html">About</a>
+            <a href="package.html">Packages</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="service.html">Services</a>
+            <a href="#register">Register</a>
+        </div>
+
+        <div class="box">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com">Facebook</a>
+            <a href="https://www.twitter.com">Twitter</a>
+            <a href="https://www.instagram.com/vihanga.prageeth_">Instagram</a>
+            <a href="https://www.linkedin.com">LinkedIn</a>
+            <a href="https://www.pinterest.com">Pinterest</a>
+        </div>
+    </div>
+
+    <h1 class="credit">Created by <span>©Vihanga Prageeth</span> | All Rights Reserved.|2024</h1>
+</section>
+
+    
+</body>
+</html>
